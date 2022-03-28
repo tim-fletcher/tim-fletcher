@@ -3,6 +3,10 @@ Readme file for rainfall (monbulk_rain_now_NEW.csv) & flow (monbulk_flow_cumecs_
 Both these files are recorded data from the Melbourne Water station 228229B (Monbulk Ck at Monbulk Ck RB, Lysterfield).
 They each cover the period from 01/01/2009 00:00 to 31/12/2016 00:00 and are at 6-minute timesteps.
 
-monbulk_rain_now_NEW.csv is a single vector with the rainfall (mm) in each 6 minute timestep (no date-time column is given)
-monbulk_flow_cumecs_NEW.csv is the same structure, but with a 'dummy' column with 'bla' written in it; this can be ignored/removed
+monbulk_rain_now_NEW.csv is a single vector with the rainfall (mm) in each 6 minute timestep (no date-time column is given).  This is the TOTAL rainfall
+in the 6 minute timestep.  For example, if it is 1.2, there was 1.2 mm of rain during that period.
+
+monbulk_flow_cumecs_NEW.csv is the same structure, but with a 'dummy' column with 'bla' written in it; this can be ignored/removed.  The flow is in cumecs
+(cubic metres (or kilolitres) per second).  Because this is per second, this is the AVERAGE flow rate during that period.  For example, if the reading for
+a given 6-minute timestep is 1.5 (m3/sec), then the TOTAL flow during that period = 0.5 x 60 x 60 = 18000 m3.
 
