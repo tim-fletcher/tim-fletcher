@@ -8,5 +8,6 @@ in the 6 minute timestep.  For example, if it is 1.2, there was 1.2 mm of rain d
 
 monbulk_flow_cumecs_NEW.csv is the same structure, but with a 'dummy' column with 'bla' written in it; this can be ignored/removed.  The flow is in cumecs
 (cubic metres (or kilolitres) per second).  Because this is per second, this is the AVERAGE flow rate during that period.  For example, if the reading for
-a given 6-minute timestep is 1.5 (m3/sec), then the TOTAL flow during that period = 0.5 x 60 x 60 = 18000 m3.
+a given 6-minute timestep (Qi) is 0.5 (m3/sec), then the TOTAL flow during that period = 0.5 m3/sec x 60 seconds x 6 minues = 180 m3.  To convert this to daily,
+one simply takes the daily integral of all Qi for that day.
 
